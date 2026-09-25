@@ -51,3 +51,67 @@ scan-tool scan ./path/to/project --fix
 ```
 
 Example output:
+[HIGH] SQL Injection detected in db/queries.py:42
+→ Suggested fix: use parameterized queries
+[MEDIUM] Hardcoded API key found in config.js:15
+→ Suggested fix: move to environment variable
+
+
+---
+
+## 🔧 Configuration
+
+You can customize scan behavior with a config file (e.g., `.scanconfig.yml`):
+
+```yaml
+rules:
+  sql_injection: true
+  xss: true
+  hardcoded_secrets: true
+  insecure_auth: true
+
+auto_fix: false
+severity_threshold: medium
+```
+
+---
+
+## 🧩 Integrations
+
+- **CI/CD** — Add as a step in GitHub Actions, GitLab CI, or Jenkins pipelines.
+- **Pre-commit Hook** — Catch issues before code is even committed.
+- **IDE Plugin** *(planned)* — Real-time scanning while you code.
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] Support for additional languages/frameworks
+- [ ] IDE plugin (VS Code)
+- [ ] Custom rule authoring
+- [ ] Dashboard for tracking vulnerability trends over time
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes
+4. Open a pull request
+
+See `CONTRIBUTING.md` for detailed guidelines.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 📬 Contact
+
+For questions, issues, or feature requests, please open an [issue](https://github.com/xenonono36-ctrl/Jinx-Security-AI/issues).
