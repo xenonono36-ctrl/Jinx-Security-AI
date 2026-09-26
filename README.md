@@ -3,7 +3,7 @@
 AI-powered code security assistant that scans codebases for vulnerabilities (SQL injection, XSS, hardcoded secrets, insecure auth) and auto-generates fixes. Combines static analysis with LLM reasoning to catch issues faster than manual review, then suggests or applies secure patches directly in your workflow.
 
 ---
-
+   
 ## ✨ Features
 
 - 🔍 **Vulnerability Scanning** — Detects common security flaws including SQL injection, XSS, hardcoded API keys/secrets, insecure authentication, and misconfigurations.
