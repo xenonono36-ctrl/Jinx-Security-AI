@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
+## 🚀 Usages
 
 ```bash
 # Run a scan on your project
